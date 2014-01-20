@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Domo RaspBerry</string>
+
+    <string name="rutaParseo">http://aplicaciones.cavesquimo.es/controlDomotica/puente.php</string>
+    <string name="carpetaDestinoFichero">data/data/com.pakete.kiolxsappsoft/temp/parseo.xml</string>
+    <string name="dataBaseName">kiolxsAppSoft.db</string>
+    <string name="directorioINT">data/data/com.pakete.kiolxsappsoft/temp/</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
