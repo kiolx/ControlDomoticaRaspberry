@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a844a4" >
+
+    <RelativeLayout
+        android:id="@+id/linearPrincipa3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewIntranetTitulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="Acciones de Intranet"
+            android:textAlignment="center"
+            android:autoText="false"
+            android:textSize="20dip"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/FrameviewIntra1"
+            android:layout_width="350dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="15dip"
+            android:layout_centerHorizontal="true"
+            android:background="#d0bccf"
+            android:layout_below="@id/TextViewIntranetTitulo">
+
+            <ImageView
+                android:id="@+id/imageViewIntra1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/intraneton" />
+
+            <ImageView
+                android:id="@+id/imageViewIntra2"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/intranetoff" />
+
+            <TextView
+                android:id="@+id/textViewIntra1"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/list_selector"
+                android:layout_height="wrap_content"
+                android:text="Device 1 name not defined" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/FrameviewIntra2"
+            android:layout_width="350dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="15dip"
+            android:layout_centerHorizontal="true"
+            android:background="#d0bccf"
+            android:layout_below="@id/FrameviewIntra1">
+
+            <ImageView
+                android:id="@+id/imageViewIntra3"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/intraneton" />
+
+            <ImageView
+                android:id="@+id/imageViewIntra4"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/intranetoff" />
+
+            <TextView
+                android:id="@+id/textViewIntra2"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/list_selector"
+                android:layout_height="wrap_content"
+                android:text="Device 2 name not defined" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</ScrollView>

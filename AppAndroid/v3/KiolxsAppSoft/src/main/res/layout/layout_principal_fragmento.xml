@@ -1,0 +1,201 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#106c39" >
+
+    <RelativeLayout
+        android:id="@+id/linearPrincipal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linarInterior1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="70dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TableLayout
+                android:id="@+id/tablaPrincipal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:id="@+id/Frameview1"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:background="#02aede"
+                        android:layout_marginTop="5dip" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/habitacionpanel" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/list_selector"
+                            android:layout_height="wrap_content"
+                            android:text="Mi Habitación" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/Frameview2"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginTop="5dip"
+                        android:background="#e76221" >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/parcelapanel" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/list_selector"
+                            android:layout_height="wrap_content"
+                            android:text="Parcela" />
+                    </FrameLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:id="@+id/Frameview3"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:background="#17974d"
+                        android:layout_marginTop="5dip" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/intranetpanel"/>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/list_selector"
+                            android:layout_height="wrap_content"
+                            android:text="Intranet" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/Frameview4"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginTop="5dip"
+                        android:background="#00bde3" >
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/enigmapanel" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/list_selector"
+                            android:layout_height="wrap_content"
+                            android:text="¿?¿?¿?" />
+
+                    </FrameLayout>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:id="@+id/Frameview5"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:background="#b01a40"
+                        android:layout_marginTop="5dip" >
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/logpanel" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/list_selector"
+                            android:layout_height="wrap_content"
+                            android:text="Log Eventos" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/Frameview6"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginTop="5dip"
+                        android:background="#603dbb" >
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/controlpanel" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/list_selector"
+                            android:layout_height="wrap_content"
+                            android:text="Opciones" />
+
+                    </FrameLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
