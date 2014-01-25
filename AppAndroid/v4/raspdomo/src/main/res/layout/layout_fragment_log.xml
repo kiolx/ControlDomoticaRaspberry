@@ -1,0 +1,51 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLogExt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutLogInt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bordes_redondos"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutLogLinea1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextLogEventos"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:editable="false"
+                    android:layout_width="300dp"
+                    android:layout_height="420dp"
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:gravity="top"
+                    android:paddingLeft="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:textSize="12dip" />
+            </FrameLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
