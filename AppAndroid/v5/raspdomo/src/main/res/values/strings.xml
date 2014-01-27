@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rasp Domo</string>
+    <string name="app_versionCode">1</string>
+    <string name="app_versionName">BlackHole</string>
+
+    <string name="title_section1">Registros</string>
+    <string name="title_section2">Servidor 1</string>
+    <string name="title_section3">Servidor 2</string>
+    <string name="title_section4">Opciones</string>
+
+    <string name="carpetaDestinoFichero">data/data/com.pakete.raspdomo/temp/parseo.xml</string>
+    <string name="dataBaseName">raspDomo.db</string>
+    <string name="directorioINT">data/data/com.pakete.raspdomo/temp/</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Recargar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_about">Acerca de</string>
+
+</resources>
