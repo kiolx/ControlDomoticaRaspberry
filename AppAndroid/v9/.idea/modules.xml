@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ControlDomoticaRaspberry.iml" filepath="$PROJECT_DIR$/ControlDomoticaRaspberry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/raspdomo/raspdomo.iml" filepath="$PROJECT_DIR$/raspdomo/raspdomo.iml" />
+    </modules>
+  </component>
+</project>
+

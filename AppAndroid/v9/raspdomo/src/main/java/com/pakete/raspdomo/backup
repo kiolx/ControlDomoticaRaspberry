@@ -1,0 +1,258 @@
+/**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+               Bundle savedInstanceState) {
+            //Obtenemos la posicion por BUNDLE ARGUMENTS
+            int posicion = getArguments().getInt(ARG_SECTION_NUMBER);
+            View rootView = inflater.inflate(R.layout.layout_fragment_principal, container, false);
+
+            if(posicion == 1){
+                rootView = inflater.inflate(R.layout.layout_fragment_principal, container, false);
+                TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+                textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            }else if(posicion == 2){
+                rootView = inflater.inflate(R.layout.layout_fragment_principal, container, false);
+                TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+                textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            }else if(posicion == 3){
+                rootView = inflater.inflate(R.layout.layout_fragment_principal, container, false);
+                TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+                textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            }else if(posicion ==4){
+
+            }
+
+            return rootView;
+        }
+    }
+
+
+
+
+       <FrameLayout
+            android:id="@+id/FrameLayoutOpcionesContenedor2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bordes_redondos"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FrameLayoutOpcionesContenedor1">
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutOpcionesLinea5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre servidor 2: "
+                android:id="@+id/textViewServer2Name"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextServer2Name"
+                android:inputType="textPersonName"
+                android:layout_gravity="left"
+                android:layout_marginLeft="140dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutOpcionesLinea6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FrameLayoutOpcionesLinea5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ip: "
+                android:id="@+id/textViewServer2Ip"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextServer2Ip"
+                android:inputType="textPersonName"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puerto: "
+                android:id="@+id/textViewServer2Puerto"
+                android:layout_gravity="left"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextServer2Puerto"
+                android:inputType="number"
+                android:layout_gravity="left"
+                android:layout_marginLeft="220dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutOpcionesLinea7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FrameLayoutOpcionesLinea6">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parámetros: "
+                android:id="@+id/textViewServer2Parametros"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextServer2Parametros"
+                android:inputType="textPersonName"
+                android:layout_gravity="left"
+                android:layout_marginLeft="90dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutOpcionesLinea8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FrameLayoutOpcionesLinea7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passphrase: "
+                android:id="@+id/textViewServer2Parametros"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextServer2Passphrase"
+                android:inputType="textPassword"
+                android:layout_gravity="left"
+                android:layout_marginLeft="90dp"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+                        //Iniciamos la Base de datos
+                        DBHelper dbHelper = new DBHelper(PrecargadorActivity.this, dataBaseName);
+                        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+                        //Mejora. Truncamos la tabla unicamente que queremos
+                        db.execSQL("delete from "+ DBHelper.TABLALogEventos);
+                        db.execSQL("delete from sqlite_sequence where name='"+ DBHelper.TABLALogEventos +"'");
+
+                        //Insertamos las opciones por defecto
+                        ContentValues valuesLogEventos = new ContentValues();
+                        valuesLogEventos.put("evento", rutaAParsear);
+                        valuesLogEventos.put("fecha", getDatePhone());
+                        valuesLogEventos.put("status", "Ok");
+                        db.insert(DBHelper.TABLALogEventos, null, valuesLogEventos);
+
+                        //Close the Database and the Helper
+                        db.close();
+                        dbHelper.close();
+
+
+                         mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+                                        @Override
+                                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                            // Do Something
+                                             if(mySwitch.) {
+                                               if(mySwitch.isChecked()){
+                                                new Funciones(ctx, rutaParseo+"?act=newReg&cmd=ledON", false, ActivityName);
+                                              }else{
+                                                new Funciones(ctx, rutaParseo+"?act=newReg&cmd=ledOFF", false, ActivityName);
+                                              }
+                                             }
+                                         }
+                                    });
+
+
+    public void LogBD(View inflatedV, Context ctx, String dataBaseName){
+
+        EditText LogEventosditText   = (EditText)inflatedV.findViewById(R.id.editTextLogEventos);
+
+        DBHelper dbHelper = new DBHelper(ctx, dataBaseName);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        LogEventosditText.setText("");//Limpiamos el texto
+
+        Cursor fila = db.rawQuery("SELECT id_evento,evento,fecha,status FROM logeventos ORDER BY id_evento ASC",null);
+        //Nos aseguramos de que existe al menos un registro
+        if (fila.moveToFirst()) {
+            //Recorremos el cursor hasta que no haya m�s registros
+            do {
+                // displaying all data in textview
+                LogEventosditText.append(" " + fila.getString(0) + " - " + fila.getString(1) + " - " + fila.getString(2) + " - " + fila.getString(3) + "\n");
+            } while(fila.moveToNext()); }
+        fila.close();
+
+        //Close the Database and the Helper
+        db.close();
+        dbHelper.close();
+
+    }
+
+
+                    <TableRow
+                        android:id="@+id/tableRowTitulo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:id="@+id/TextView04" android:text="ID"
+                            android:layout_weight="1" android:background="@drawable/bordes_redondos_3"
+                            android:textColor="#000000"
+                            android:padding="10dip" android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/TextView04" android:text="Comando"
+                            android:layout_weight="1" android:background="@drawable/bordes_redondos_3"
+                            android:textColor="#000000"
+                            android:padding="10dip" android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/TextView04" android:text="Estado"
+                            android:layout_weight="1" android:background="@drawable/bordes_redondos_3"
+                            android:textColor="#000000"
+                            android:padding="10dip" android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/TextView05" android:text="Fecha-Hora"
+                            android:layout_weight="1" android:background="@drawable/bordes_redondos_3"
+                            android:textColor="#000000"
+                            android:padding="10dip" android:gravity="center"/>
+                    </TableRow>
